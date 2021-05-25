@@ -1,0 +1,33 @@
+## Run the cam_stream.py file from the following folder (/home/pi/Raspberry-Pi/CamStream)
+
+'/home/pi/' is the default home folder for user 'pi' on a Raspberry-Pi.
+
+Let's say you have created and saved all the files under the following folder:
+/home/pi/Raspberry-Pi/CamStream
+
+You need to open a terminal and navigate to the above folder.
+
+Open a terminal, this will show a prompt like the following:
+pi@raspberrypi:~ $
+
+Write the following command and type enter
+cd Raspberry-Pi/CamStream
+
+Now the following prompt will show up.
+
+pi@raspberrypi:~/Raspberry-Pi/CamStream $ 
+
+
+Now, copy paste the follwing command in the terminal to execute the code.
+
+
+docker run -it --rm -p 5000:5000 \
+    -v `pwd`/camera_stream.py:/camera_stream.py \
+    -v `pwd`/templates:/templates \
+    -v `pwd`/:/output \
+    --device /dev/video0 \
+    --device /dev/vchiq\
+   soharab/rpi-opencv-python:latest \
+   python /camera_stream.py
+
+
