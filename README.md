@@ -11,7 +11,7 @@ Installation note can be found here:
 https://github.com/soharabhossain/Raspberry-Pi/blob/main/Camera%20Stream/Package_Installation_Note.txt
 
 
-### Pull the Docker Image for Raspberry-Pi - preinstalled Python and OpenCV
+### Pull the Docker Image for Raspberry-Pi - Python and OpenCV pre-installed
 Please pull the docker image from the following link:
 https://hub.docker.com/r/soharab/rpi-opencv-python
 
