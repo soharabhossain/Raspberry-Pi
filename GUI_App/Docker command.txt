@@ -1,0 +1,19 @@
+# Run a GUI application from a Docker container
+# Tested on a Raspberry-Pi running on a host O.S Ubuntu
+
+Run this app from the local directory containing the following files
+ocv.py
+Lena.tiff
+Soharab.png
+
+Assumption, IP of the host machine : 192.168.1.3
+
+The Docker is already installed and the following docker image is present in the host
+soharab/rpi-opencv-python:latest  
+
+The above image creates a container with Python and OpenCV preinstalled.
+
+Invoke a terminal in the current folder and run the following command:
+
+docker run -it --rm  -v `pwd`/ocv.py:/ocv.py  -v `pwd`:/images  -e  DISPLAY="192.168.1.3:0.0" --env=$DISPLAY --net=host  soharab/rpi-opencv-python:latest  python ocv.py
+

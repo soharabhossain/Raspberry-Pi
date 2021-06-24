@@ -1,0 +1,16 @@
+import cv2
+
+img1 = cv2.imread('/images/Lena.tiff')
+#img1 = cv2.cvtColor(img1, cv2.COLOR_BGR2RGB)
+
+
+img2 = cv2.imread('/images/Soharab.png')
+#img2 = cv2.cvtColor(img2, cv2.COLOR_BGR2RGB)
+
+cv2.imshow('Lena', img1)
+cv2.imshow('Soharab', img2)
+
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+
