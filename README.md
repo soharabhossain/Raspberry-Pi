@@ -20,3 +20,11 @@ https://hub.docker.com/r/soharab/rpi-opencv-python
 docker pull soharab/rpi-opencv-python
 
 
+### Raspberry Pi 4 Pins – Complete Practical Guide 
+https://roboticsbackend.com/raspberry-pi-3-pins/
+
+### Python module to control the GPIO on a Raspberry Pi.
+https://pypi.org/project/RPi.GPIO/
+
+
+
